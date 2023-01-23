@@ -1,0 +1,23 @@
+{
+    "name": "aws-amplify-logs-s3-lambda",
+    "version": "2.0.0",
+    "description": "lambda log exporter function for aws amplify using cloudwatch cron task",
+    "main": "index.js",
+    "scripts": {
+        "build": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sar/aws-amplify-logs-s3-lambda-v2.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sar/aws-amplify-logs-s3-lambda-v2/issues"
+    },
+    "homepage": "https://github.com/sar/aws-amplify-logs-s3-lambda-v2#readme",
+    "devDependencies": {
+        "adm-zip": "^0.5.10"
+    }
+}
