@@ -4,15 +4,12 @@ import urllib.request
 from time import gmtime, strftime
 
 def lambda_handler(event, context):
-    payload = event["body"]
-    if payload is None:
+    params = event["task"]
+    if params is None:
         raise ValueError("[err]::missing_req_params")
 
-    params = json.load(payload)
-    print(params)
-
     REGION = params["region"];
-    BUCKET_NAME = params["bucket_name"];
+    BUCKET_NAME = params["s3_bucket"];
     APP_ID = params["app_id"];
     DOMAIN_NAME = params["domain_name"];
 
