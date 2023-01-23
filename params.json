@@ -1,0 +1,6 @@
+{
+    "region": "us-east-1",
+    "s3_bucket": "bucket-name",
+    "domain_name": "amplify-domain-name",
+    "app_id": "amplify-app-id"
+}
