@@ -14,7 +14,7 @@ def lambda_handler(event, context):
     DOMAIN_NAME = params["domain_name"];
 
     TIME_STAMP = strftime("%Y_%m_%d_%H%M%S", gmtime())
-    FILE_NAME = str(TIME_STAMP + '_' + 'access_logs' + '_' + DOMAIN_NAME)
+    FILE_NAME = str(TIME_STAMP + '_' + 'access_logs' + '_' + APP_ID + '_' + DOMAIN_NAME)
 
     client = boto3.client('amplify')
     response = client.generate_access_logs(
